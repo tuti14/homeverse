@@ -2221,11 +2221,14 @@ footer {
   .details .container .view__info {
     grid-template-columns: 1fr;
   }
-  .details .container .view__info .form__group .content{
-order: inherit;
+}
+
+@media (max-width: 768px) {
+  .view__info .form__group:first-child {
+    order: 2;
   }
-  .details .container .view__info .form__group .view__agent{
-order: initial;
+  .view__info .form__group:last-child {
+    order: 1;
   }
 }
 
